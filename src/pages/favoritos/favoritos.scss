@@ -1,0 +1,68 @@
+page-favoritos {
+ @import url('https://fonts.googleapis.com/css?family=Amaranth');
+     @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+     
+    .letras{
+    font-size: 75%;
+    font-family: 'PT Serif', serif;
+}
+
+    .titulos{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 60%;
+    padding-left: 33%; 
+    }
+
+    .contenedor{
+        position: absolute;
+        top: 35%;
+        left: -0%;
+        //margin-left: -4%;
+        text-align: center;
+    
+        }
+
+        .boton{
+            position: absolute;
+            font-size: 100%;
+            text-transform: initial !important;
+            font-family: 'PT Serif', serif;
+            height: 70%;
+            width: 50%;
+            font-weight: 100;
+            letter-spacing: 2px;
+            right: 23%;
+            top: 3%;
+            color: #ffffff;
+            
+
+           
+        }
+
+        .abajo {
+            position: absolute;
+            top:70%;
+            color: antiquewhite;
+            width: 85%;
+            
+            
+        }
+        .abajo2 {
+            position: absolute;
+            top:79%;
+        }
+        .abajo3 {
+            position: absolute;
+            top:88%;
+        }
+        .abajo4 {
+            position: absolute;
+            top:97%;
+        }
+        .abajo5 {
+            position: absolute;
+            top:106%;
+        }
+        
+
+}

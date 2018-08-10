@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'ionic',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   '--json' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.4
+4 silly mapToRegistry name ionic
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'ionic',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'ionic',
+7 silly mapToRegistry   name: 'ionic',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/ionic
+9 verbose request uri https://registry.npmjs.org/ionic
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 2:42:22 PM
+12 verbose request id 412c599de1f66f78
+13 verbose etag W/"ea8fe8b9011031a5cea595968d7facbd"
+14 verbose lastModified Tue, 31 Jul 2018 16:27:43 GMT
+15 http request GET https://registry.npmjs.org/ionic
+16 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+17 info attempt registry request try #2 at 2:43:02 PM
+18 verbose etag W/"ea8fe8b9011031a5cea595968d7facbd"
+19 verbose lastModified Tue, 31 Jul 2018 16:27:43 GMT
+20 http request GET https://registry.npmjs.org/ionic
+21 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+22 info attempt registry request try #3 at 2:44:09 PM
+23 verbose etag W/"ea8fe8b9011031a5cea595968d7facbd"
+24 verbose lastModified Tue, 31 Jul 2018 16:27:43 GMT
+25 http request GET https://registry.npmjs.org/ionic
+26 http 304 https://registry.npmjs.org/ionic
+27 verbose headers { date: 'Wed, 01 Aug 2018 19:35:49 GMT',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'set-cookie': [ '__cfduid=d18b5a8dc30929693f64334d7e1d1d40f1533152149; expires=Thu, 01-Aug-19 19:35:49 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+27 verbose headers   'cache-control': 'max-age=300',
+27 verbose headers   'cf-cache-status': 'HIT',
+27 verbose headers   'cf-ray': '443ac0060c629b08-DFW',
+27 verbose headers   etag: '"ea8fe8b9011031a5cea595968d7facbd"',
+27 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+27 verbose headers   'last-modified': 'Tue, 31 Jul 2018 16:27:43 GMT',
+27 verbose headers   vary: 'accept-encoding, accept',
+27 verbose headers   server: 'cloudflare' }
+28 silly get cb [ 304,
+28 silly get   { date: 'Wed, 01 Aug 2018 19:35:49 GMT',
+28 silly get     connection: 'keep-alive',
+28 silly get     'set-cookie': [ '__cfduid=d18b5a8dc30929693f64334d7e1d1d40f1533152149; expires=Thu, 01-Aug-19 19:35:49 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+28 silly get     'cache-control': 'max-age=300',
+28 silly get     'cf-cache-status': 'HIT',
+28 silly get     'cf-ray': '443ac0060c629b08-DFW',
+28 silly get     etag: '"ea8fe8b9011031a5cea595968d7facbd"',
+28 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+28 silly get     'last-modified': 'Tue, 31 Jul 2018 16:27:43 GMT',
+28 silly get     vary: 'accept-encoding, accept',
+28 silly get     server: 'cloudflare' } ]
+29 verbose etag https://registry.npmjs.org/ionic from cache
+30 verbose get saving ionic to /Users/Abigail/.npm/registry.npmjs.org/ionic/.cache.json
+31 verbose correctMkdir /Users/Abigail/.npm correctMkdir not in flight; initializing
+32 verbose exit [ 0, true ]
+33 verbose stack Error: write EPIPE
+33 verbose stack     at exports._errnoException (util.js:1020:11)
+33 verbose stack     at WriteWrap.afterWrite (net.js:800:14)
+34 verbose cwd /Users/Abigail/Desktop/pulpo
+35 error Darwin 15.6.0
+36 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "view" "ionic" "dist-tags.latest" "--json"
+37 error node v6.11.4
+38 error npm  v3.10.10
+39 error code EPIPE
+40 error errno EPIPE
+41 error syscall write
+42 error write EPIPE
+43 error If you need help, you may report this error at:
+43 error     <https://github.com/npm/npm/issues>
+44 verbose exit [ 1, true ]

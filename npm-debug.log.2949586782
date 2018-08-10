@@ -1,0 +1,83 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '@ionic/cli-plugin-ionic-angular',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   '--json' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.4
+4 silly mapToRegistry name @ionic/cli-plugin-ionic-angular
+5 silly mapToRegistry scope (from package name) @ionic
+6 verbose mapToRegistry no registry URL found in name for scope @ionic
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npmjs.org/
+9 silly mapToRegistry data Result {
+9 silly mapToRegistry   raw: '@ionic/cli-plugin-ionic-angular',
+9 silly mapToRegistry   scope: '@ionic',
+9 silly mapToRegistry   escapedName: '@ionic%2fcli-plugin-ionic-angular',
+9 silly mapToRegistry   name: '@ionic/cli-plugin-ionic-angular',
+9 silly mapToRegistry   rawSpec: '',
+9 silly mapToRegistry   spec: 'latest',
+9 silly mapToRegistry   type: 'tag' }
+10 silly mapToRegistry uri https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular
+11 verbose request uri https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 2:42:22 PM
+14 verbose request id 1b5387518302e85f
+15 verbose etag W/"2e6cb24adf69b0f3563ec88b4f7db9d6"
+16 verbose lastModified Mon, 16 Jul 2018 19:11:27 GMT
+17 http request GET https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular
+18 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+19 info attempt registry request try #2 at 2:43:02 PM
+20 verbose etag W/"2e6cb24adf69b0f3563ec88b4f7db9d6"
+21 verbose lastModified Mon, 16 Jul 2018 19:11:27 GMT
+22 http request GET https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular
+23 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+24 info attempt registry request try #3 at 2:44:09 PM
+25 verbose etag W/"2e6cb24adf69b0f3563ec88b4f7db9d6"
+26 verbose lastModified Mon, 16 Jul 2018 19:11:27 GMT
+27 http request GET https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular
+28 http 304 https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular
+29 verbose headers { date: 'Wed, 01 Aug 2018 19:35:49 GMT',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'set-cookie': [ '__cfduid=d60d554f77a6596878f20acdff6dbf1541533152149; expires=Thu, 01-Aug-19 19:35:49 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+29 verbose headers   'cache-control': 'public, max-age=14400',
+29 verbose headers   'cf-cache-status': 'HIT',
+29 verbose headers   'cf-ray': '443ac005f8a8116b-DFW',
+29 verbose headers   etag: '"2e6cb24adf69b0f3563ec88b4f7db9d6"',
+29 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 verbose headers   'last-modified': 'Mon, 16 Jul 2018 19:11:27 GMT',
+29 verbose headers   vary: 'Accept-Encoding',
+29 verbose headers   server: 'cloudflare' }
+30 silly get cb [ 304,
+30 silly get   { date: 'Wed, 01 Aug 2018 19:35:49 GMT',
+30 silly get     connection: 'keep-alive',
+30 silly get     'set-cookie': [ '__cfduid=d60d554f77a6596878f20acdff6dbf1541533152149; expires=Thu, 01-Aug-19 19:35:49 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+30 silly get     'cache-control': 'public, max-age=14400',
+30 silly get     'cf-cache-status': 'HIT',
+30 silly get     'cf-ray': '443ac005f8a8116b-DFW',
+30 silly get     etag: '"2e6cb24adf69b0f3563ec88b4f7db9d6"',
+30 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+30 silly get     'last-modified': 'Mon, 16 Jul 2018 19:11:27 GMT',
+30 silly get     vary: 'Accept-Encoding',
+30 silly get     server: 'cloudflare' } ]
+31 verbose etag https://registry.npmjs.org/@ionic%2fcli-plugin-ionic-angular from cache
+32 verbose get saving @ionic/cli-plugin-ionic-angular to /Users/Abigail/.npm/registry.npmjs.org/_40ionic_252fcli-plugin-ionic-angular/.cache.json
+33 verbose correctMkdir /Users/Abigail/.npm correctMkdir not in flight; initializing
+34 verbose exit [ 0, true ]
+35 verbose stack Error: write EPIPE
+35 verbose stack     at exports._errnoException (util.js:1020:11)
+35 verbose stack     at WriteWrap.afterWrite (net.js:800:14)
+36 verbose cwd /Users/Abigail/Desktop/pulpo
+37 error Darwin 15.6.0
+38 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "view" "@ionic/cli-plugin-ionic-angular" "dist-tags.latest" "--json"
+39 error node v6.11.4
+40 error npm  v3.10.10
+41 error code EPIPE
+42 error errno EPIPE
+43 error syscall write
+44 error write EPIPE
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]

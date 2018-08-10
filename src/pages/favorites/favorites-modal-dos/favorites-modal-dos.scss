@@ -1,0 +1,48 @@
+page-favorites-modal-dos {
+    @import url('https://fonts.googleapis.com/css?family=Amaranth');
+     @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+     .titulos{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 60%;
+    padding-left: 10%;
+    }
+
+    .titulito{
+        padding-left: 20%;
+        font-family: 'PT Serif', serif;
+    }
+
+    .letras{
+    font-size: 75%;
+    font-family: 'PT Serif', serif;
+    }
+
+
+     .boton{
+            
+            font-size: 100%;
+            text-transform: initial !important;
+            font-family: 'PT Serif', serif;
+            height: 30%;
+            width: 30%;
+            font-weight: 30;
+            letter-spacing: 2px;
+            right: -30%;
+            top: 3%;
+            color: #ffffff;
+           
+        }
+
+        .contenedor{
+        position: absolute;
+        top: 50%;
+        left: -0%;
+        //margin-left: -4%;
+        text-align: center;
+        size: 30%;
+        font-size: 100%;
+        size: 20%;
+        }
+
+}

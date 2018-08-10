@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="color">
+    <ion-title class="titulos">Porcentaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <img class="contenedor" src="assets/imgs/pulpo.png">
+  <h4>Configuracion de Porcentaje</h4>
+ 
+  <ion-list>
+    <ion-item>
+      <ion-label class="letras" fixed>% de propina</ion-label>
+      <ion-input type="number" value="0" [(ngModel)]="propina"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button small round class="boton" color="color" item-end (click)="Guardar()">Guardar</button>
+    </ion-item>
+  </ion-list>
+</ion-content>>

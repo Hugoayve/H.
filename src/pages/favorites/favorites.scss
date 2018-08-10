@@ -1,0 +1,40 @@
+page-favorites {
+    @import url('https://fonts.googleapis.com/css?family=Amaranth');
+     @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+     .titulos{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 60%;
+    padding-left: 30%;
+    }
+
+    .titulito{
+        padding-left: 17%;
+    }
+
+    .titulito2{
+        padding-left: 28%;
+    }
+
+     .boton{
+            
+            font-size: 150%;
+            text-transform: initial !important;
+            font-family: 'PT Serif', serif;
+            height: 70%;
+            width: 70%;
+            font-weight: 40%;
+            letter-spacing: 1px;
+            right: -15%;
+            top: 3%;
+            color: #ffffff;
+           
+        }
+
+        &ion-card {
+          font-family: 'Amaranth', sans-serif;
+        position: center; 
+        color: beige;
+        }
+
+}

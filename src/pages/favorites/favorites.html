@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="color">
+    <ion-title></ion-title>
+    <div padding>
+      <ion-segment [(ngModel)]="productos">
+        <ion-segment-button value="alimentos">
+          Alimentos
+        </ion-segment-button>
+        <ion-segment-button value="bebidas">
+          Bebidas
+        </ion-segment-button>
+        <ion-segment-button value="alcohol">
+          INVENTARIO
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <div [ngSwitch]="productos">
+    <ion-list *ngSwitchCase="'alimentos'">
+      <img class="contenedor" src="assets/imgs/bebida.jpg">
+      <h4 class="titulito">Agregar producto nuevo</h4>
+      <p>
+      </p>
+      <button ion-button small round class="boton" color="color" (click)="OnNew()">Nuevo Producto</button>
+      <ion-list>
+        <ion-item>
+          
+        </ion-item>
+
+      </ion-list>
+
+    </ion-list>
+
+
+    <ion-list *ngSwitchCase="'bebidas'">
+      <img class="contenedor" src="assets/imgs/cerveza.jpg">
+      <h4 class="titulito">Agregar bebida nueva</h4>
+      <p>
+      </p>
+      <button ion-button small round class="boton" color="color" (click)="OnNew()">Nueva Bebida</button>
+      <ion-list>
+        <ion-item>
+          
+        </ion-item>
+
+      </ion-list>
+
+    </ion-list>
+
+
+    <ion-list *ngSwitchCase="'alcohol'">
+      <h4 class="titulito2">INVENTARIO</h4>
+      <p>
+      </p>
+      <ion-list>
+        <ion-item>
+          <ion-card padding *ngFor="let favorite of favoritesList$ | async">
+            <div class="card-title">Cantidad: {{favorite.cantidad}}</div>
+            <div class="card-subtitle">Producto: {{favorite.nombre}}</div>
+            <div class="card-title">Precio: $ {{favorite.precio}}</div>
+            <ion-icon name="refresh" (click)="OnUpdate(favorite)"></ion-icon>
+            <ion-icon name="trash" (click)="OnDelete(favorite)"></ion-icon>
+
+          </ion-card>
+        </ion-item>
+
+      </ion-list>
+
+    </ion-list>
+
+  </div>
+
+</ion-content>
